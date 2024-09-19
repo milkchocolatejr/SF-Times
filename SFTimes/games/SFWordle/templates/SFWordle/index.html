@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Play SF Wordle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            font-size: 22px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header a.logo-link {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        header img {
+            height: 60px;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% load static %}
+        <a href="/" class="logo-link">
+            <img src="{% static 'images/state_farm_logo.png' %}" alt="State Farm Logo">
+        </a>
+        <h1>How to Play SF Wordle</h1>
+    </header>
+    <main>
+        <h1>Overview</h1>
+        <p>SF Wordle is a word guessing game where you get 6 chances to guess a 4-6 letter word. Here's how to play:</p>
+
+        <h1>Rules</h1>
+        <ol>
+            <li>After making a guess the letter will be one of three colors.</li>
+                <li>Green means that the letter is in the correct spot.</li>
+                <li>Yellow means that letter is in the word but not that specific location.</li>
+                <li>Gray means that letter isn't in the word at all.</li>
+            <li>The words are all Insurance/State Farm related.</li>
+            <li>If you guess the word before running out of tries you win!</li>
+        </ol>
+
+    </main>
+</body>
+</html>
+

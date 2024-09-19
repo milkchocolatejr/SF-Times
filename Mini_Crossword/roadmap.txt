@@ -1,0 +1,43 @@
+* + [v. 0.2] runs on Linux <tested in Debian-based Kali Linux 2019.4 with virtualenv>
+* + [v. 0.2] configure shuffle / no shuffle of word sources
+* + [v. 0.2] inbuilt browser
+* + [v. 0.2] editable main toolbar
+* + [v. 0.2] show / output cw stats: % complete, % clues complete, complexity index, etc...
+* + [v. 0.2] publish on... (cloud + social)
+	* Kloudless API (aggregator for other clouds):
+		https://developers.kloudless.com/docs/v1/core
+	* Shareaholic API (social sharing aggregator):
+		https://www.shareaholic.com/api/
+* + [v. 0.2] display generation progress in progress bar
+* + [v. 0.2] internationalization support (translations)
+* + [v. 0.2] optionally associate cw file types (XPF, IPUZ) with pyCross
+* + [v. 0.2] API reference generation with Doxygen (see pycross/doc/apiref)
+
+* + [v. 0.3] Docker support (to run from docker on Linux / OSX)
+* + [v. 0.3] drag and drop crossword and settings files to main window
+* + [v. 0.3] third-party executable plugins (edit DB, text, git)
+* + [v. 0.3] secure Kloudless access to users through OAuth 2 authentication (rather than raw API key)
+* + [v. 0.3] user plugins API (via Yapsy)
+
+* + [v. 0.4] help docs (online / offline)
+* + [v. 0.4] fix bug with transparent cells when exported to image (png, jpg...)
+* + [v. 0.4] clear all clues action
+* + [v. 0.4] GZIP-compressed PXJSON settings files (to compress large lists like words)
+* + [v. 0.4] fit grid in window
+* + [v. 0.4] enhanced grid editing: multiple selection, instruments for filler, 
+			blank, surrounding cells, batch cell edit etc.
+* + [v. 0.4] undo / redo
+* + [v. 0.4] word source database manager (import from Hunspell, edit DB manually)
+
+* + [v. 0.5] whats-this tips for UI elements linked to Help sections 
+
+* [v. 0.5] fill all clues automatically from Google
+* [v. 0.5] search text in grid and clues
+* [v. 0.5] non-rectangular cells (circles, hexagons, triangles, etc)
+* [v. 0.5] customizable interval between cells in grid (>=0)
+* [v. 0.5] individual cell styling (color, shape, font...) and custom style sets
+* [v. 0.5] random grid pattern creation (parametric)
+* [v. 0.5] grid pattern from outline image (with OpenCV or PIL)
+* [v. 0.5] read crosswords from image (scan) using OpenCV
+* [v. 0.5] other than classic xwords (e.g. Swedish or Barred)
+* [v. 0.5] support of keywords in crossword (mark in grid and output to separate edit field)

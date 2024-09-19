@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>State Farm Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header a.logo-link {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        header img {
+            height: 60px; /* Adjusted height for a bigger logo */
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .game-buttons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+        }
+        .game-buttons li {
+            display: inline;
+        }
+        .game-buttons button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px; /* More rounded corners */
+            transition: background-color 0.3s ease;
+        }
+        .game-buttons button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% load static %}
+        <a href="/" class="logo-link">
+            <img src="{% static 'images/state_farm_logo.png' %}" alt="State Farm Logo">
+        </a>
+        <h1>State Farm Games</h1>
+    </header>
+    <main>
+        <h1>Play Some Games!</h1>
+        <p>Some fun games for you to enjoy!</p>
+        <ul class="game-buttons">
+            <li><a href="/games/SFWordle"><button>SFWordle</button></a></li>
+            <li><a href="/games/SFConnections"><button>SFConnections</button></a></li>
+            <li><a href="/games/SFSpellingBee"><button>SFSpellingBee</button></a></li>
+            <li><a href="/games/SFGalaga"><button>SFGalaga</button></a></li>
+        </ul>
+    </main>
+</body>
+</html>

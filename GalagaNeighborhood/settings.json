@@ -1,0 +1,13 @@
+{
+  "aliens": [
+	{ "alien.png": ["attack.png", ".1", "1", "2", "7", ".005", "1", "1", "1"] }
+  ],
+  "players": [
+	{
+	  "person.png": ["jake_policy", "jake_claims", ".2", "5"]
+	}
+  ],
+  "policyHolders": [
+	{"house_1.png": [".95", "1", "Home"]}
+  ]
+}

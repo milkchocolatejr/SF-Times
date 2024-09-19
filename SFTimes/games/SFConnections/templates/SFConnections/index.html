@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Play SF Connections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            font-size: 22px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header a.logo-link {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        header img {
+            height: 60px;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% load static %}
+        <a href="/" class="logo-link">
+            <img src="{% static 'images/state_farm_logo.png' %}" alt="State Farm Logo">
+        </a>
+        <h1>How to Play Connections</h1>
+    </header>
+    <main>
+        <h1>Overview</h1>
+        <p>Connections is a word association game where players have to guess the connection between a set of words or phrases. Here's how to play:</p>
+
+        <h1>Rules</h1>
+        <ol>
+            <li>A series of words or phrases are presented to the player.</li>
+            <li>You must select words in the same category.</li>
+            <li>The connection could be a common theme, category, or concept that links the words together.</li>
+            <li>You have limited lives so try not to guess randomly.</li>
+            <li>If you get all four connections you win.</li>
+        </ol>
+
+        <h1>Example</h1>
+        <p>For example, if the words are "Apple," "Orange," and "Banana," the connection could be "Fruits."</p>
+    </main>
+</body>
+</html>
+

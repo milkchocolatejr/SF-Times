@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Play SF Spelling Bee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            font-size: 22px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header a.logo-link {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        header img {
+            height: 60px;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% load static %}
+        <a href="/" class="logo-link">
+            <img src="{% static 'images/state_farm_logo.png' %}" alt="State Farm Logo">
+        </a>
+        <h1>How to Play SF Spelling Bee</h1>
+    </header>
+    <main>
+        <h1>Overview</h1>
+        <p>The SF Spelling Bee is a word puzzle game where players try to form as many words as possible in 45 seconds using a set of given letters. Here's how to play:</p>
+
+        <h1>Rules</h1>
+        <ol>
+            <li>Find words using the letters provided. You can not use the same circle twice in one word.</li>
+            <li>Words must be at least three letters long.</li>
+            <li>Insurance/State Farm terms are worth double points.</li>
+            <li>There will be at least three insurance/State Farm terms in each attempt.</li>
+            <li>Words score points based on length, one point per letter and two per letter for SF terms.</li>
+            <li>Try to find as many words as possible and aim for the highest score!</li>
+            <li>If you are in the top 10 you can record your name in the leaderboard!</li>
+        </ol>
+
+    </main>
+</body>
+</html>
+

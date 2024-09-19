@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Play SF Galaga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            font-size: 22px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header a.logo-link {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        header img {
+            height: 60px;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% load static %}
+        <a href="/" class="logo-link">
+            <img src="{% static 'images/state_farm_logo.png' %}" alt="State Farm Logo">
+        </a>
+        <h1>How to Play SF Galaga</h1>
+    </header>
+    <main>
+        <h1>Overview</h1>
+        <p>SF Galaga is a fun game where you have to defend the neighborhood. Here's how to play:</p>
+
+        <h1>Rules</h1>
+        <ol>
+            <li>There are alien spaceships trying to destroy a house.</li>
+                <li>Defend the house by throwing out insurance policies.</li>
+                <li>Try to survive as long as possible without the house being destroyed!</li>
+        </ol>
+
+    </main>
+</body>
+</html>
+
+
